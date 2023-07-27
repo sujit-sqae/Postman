@@ -686,9 +686,9 @@
 											"",
 											"    pm.expect(responseData).to.be.an('array');",
 											"    responseData.forEach(function (pet) {",
-											"        pm.expect(pet.category).to.be.an('object');",
-											"        pm.expect(pet.category).to.have.property('id');",
-											"        pm.expect(pet.category).to.have.property('status');",
+											"        pm.expect(pet).to.be.an('object');",
+											"        pm.expect(pet).to.have.property('id');",
+											"        pm.expect(pet).to.have.property('status');",
 											"    });",
 											"});",
 											"",
@@ -1526,7 +1526,7 @@
 	],
 	"variable": [
 		{
-			"id": "5a905345-3911-4bd7-8718-e87f67c2564c",
+			"id": "51a0b4a4-0179-4009-8b9b-be2919df7a9f",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
