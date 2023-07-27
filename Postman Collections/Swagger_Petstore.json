@@ -9,7 +9,7 @@
 			"name": "pet",
 			"item": [
 				{
-					"name": "New Folder",
+					"name": "Add a new pet to the store",
 					"item": [],
 					"id": "8fae869f-5a1d-4b07-a290-78058beed640"
 				},
@@ -420,7 +420,7 @@
 	],
 	"variable": [
 		{
-			"id": "6fa95ef2-05a1-4c2e-9c21-153ed61ecf7d",
+			"id": "ed8d2a10-e45b-46b5-a56e-39b572778caf",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
