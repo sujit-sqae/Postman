@@ -12,15 +12,30 @@
 					"name": "Add a new pet to the store",
 					"item": [
 						{
-							"name": "Successful",
+							"name": "successful",
 							"id": "cae394a0-06d4-477a-9c14-af2092eac575",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "POST",
-								"header": [],
-								"url": "{{baseURL}}/"
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\n\n"
+								},
+								"url": "{{baseURL}}/pet"
 							},
 							"response": []
 						},
@@ -434,7 +449,7 @@
 	],
 	"variable": [
 		{
-			"id": "34e5ca5f-5169-41cb-b3c9-140caab6bbc1",
+			"id": "6ae79ee5-b821-40b0-8174-78276e6b6871",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
