@@ -238,19 +238,6 @@
 					"id": "e7f905cf-497b-425e-bf66-a0a8fc78dc72"
 				},
 				{
-					"name": "Updates a pet in the store with form data",
-					"id": "27ef38f9-1743-47d3-aa7c-f10c91534e91",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
-				},
-				{
 					"name": "Deletes a pet",
 					"id": "c3fff72f-5925-4e1e-9044-7fdbb0459398",
 					"protocolProfileBehavior": {
@@ -265,6 +252,38 @@
 				}
 			],
 			"id": "d177ff21-40da-479a-a963-93a0785add8d"
+		},
+		{
+			"name": "Updates a pet in the store with form data",
+			"item": [
+				{
+					"name": "Updates a pet in the store with form data",
+					"id": "27ef38f9-1743-47d3-aa7c-f10c91534e91",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid input",
+					"id": "f6bd34c3-2636-48ad-8e3e-71e47d491fa6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				}
+			],
+			"id": "e9ea6edc-0f8b-4700-929a-1bd9d363cb3b"
 		},
 		{
 			"name": "Find pet by ID",
@@ -581,16 +600,11 @@
 				}
 			],
 			"id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
-		},
-		{
-			"name": "Updates a pet in the store with form data",
-			"item": [],
-			"id": "e9ea6edc-0f8b-4700-929a-1bd9d363cb3b"
 		}
 	],
 	"variable": [
 		{
-			"id": "c1ec48a8-267e-40d9-9765-3364b614be80",
+			"id": "035ed525-d051-47a8-a708-3e87e37cffde",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
