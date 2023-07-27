@@ -822,14 +822,85 @@
 						},
 						{
 							"name": "Invalid status value",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7b30de46-dacb-4e53-b845-a11bfcddedc9",
+										"exec": [
+											"",
+											"pm.test(\"Invalid status value\", function () {",
+											"    pm.expect(pm.response.code).to.equal(404);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Response has required fields - code, type, and message\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData).to.be.an('object');",
+											"    pm.expect(responseData.code).to.exist;",
+											"    pm.expect(responseData.type).to.exist;",
+											"    pm.expect(responseData.message).to.exist;",
+											"});",
+											"",
+											"",
+											"pm.test(\"Code is a non-zero integer\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.code).to.be.a('number');",
+											"    pm.expect(responseData.code).to.not.equal(0);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Type is a non-empty string\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData).to.be.an('object');",
+											"    pm.expect(responseData.type).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Type should not be empty\");",
+											"});",
+											"",
+											"",
+											"pm.test(\"Message is a non-empty string\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.message).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "661aa693-5679-4d2e-9995-1dd316e1bc88",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
-								"url": "{{baseURL}}/"
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/pet1/findByStatus?status=none",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"pet1",
+										"findByStatus"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "none"
+										}
+									]
+								}
 							},
 							"response": []
 						}
@@ -1574,7 +1645,7 @@
 	],
 	"variable": [
 		{
-			"id": "b6c4baa1-f410-4013-ae53-f52f251f7215",
+			"id": "5fc90145-98c3-414c-9306-47d63f5449d2",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
