@@ -603,7 +603,7 @@
 							"response": []
 						},
 						{
-							"name": "Successful operation Copy",
+							"name": "Invalid username supplied",
 							"id": "bd01f959-aa3a-44c8-89aa-029f2d6b43e2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -943,7 +943,7 @@
 	],
 	"variable": [
 		{
-			"id": "bf072381-3117-401f-b6d1-c63c63110b36",
+			"id": "e549f5b5-8368-4788-931b-4e30ddce8647",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
