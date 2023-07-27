@@ -1,0 +1,410 @@
+{
+	"info": {
+		"_postman_id": "3f861c90-e984-4bfa-9283-6bfbd69e0abc",
+		"name": "Swagger Petstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pet",
+			"item": [
+				{
+					"name": "uploadImage",
+					"_postman_id": "46eef211-3614-4ecc-8005-d24068799e9c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Add a new pet to the store",
+					"_postman_id": "cae394a0-06d4-477a-9c14-af2092eac575",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update an existing pet",
+					"_postman_id": "2e6af7cb-42dc-459a-8564-2e576d73bbb2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Finds Pets by status",
+					"_postman_id": "2c366db7-e496-49f6-bdef-ecb93feb9365",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Finds Pets by tags",
+					"_postman_id": "2d61cb9f-9362-4fed-b827-3b3cccce35ac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Find pet by ID",
+					"_postman_id": "c1f74fb2-7b1e-47e9-bdb9-0d30849a3cab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a pet in the store with form data",
+					"_postman_id": "27ef38f9-1743-47d3-aa7c-f10c91534e91",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Deletes a pet",
+					"_postman_id": "c3fff72f-5925-4e1e-9044-7fdbb0459398",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "d177ff21-40da-479a-a963-93a0785add8d"
+		},
+		{
+			"name": "store",
+			"item": [
+				{
+					"name": "Get user by user name",
+					"_postman_id": "9ba8cfd3-da73-4c94-ad5b-d46d4327a360",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Find purchase order by ID",
+					"_postman_id": "ae730b81-1ab2-4ed2-8da0-f2308debe350",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete purchase order by ID",
+					"_postman_id": "a5dae643-0090-4e26-8b56-73a8d14aa55a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns pet inventories by status",
+					"_postman_id": "071997f3-e068-4d73-8389-721849c961d8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "77e67129-5522-4514-aea7-6a0c7d924271"
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "createWithArray",
+					"_postman_id": "657cef06-839e-4aea-9f09-b033f9c836fb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": "{{baseURL}}/user/createWithArray"
+					},
+					"response": []
+				},
+				{
+					"name": "createWithList",
+					"_postman_id": "9c8151ae-c1f2-4beb-93fc-92b8242a7691",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": "{{baseURL}}/user/createWithList"
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by user name",
+					"_postman_id": "10c19170-b0e1-4a65-8312-cdc63b3d5514",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{baseURL}}/user/string"
+					},
+					"response": []
+				},
+				{
+					"name": "Updated User",
+					"_postman_id": "6aaeca98-e3d0-486b-83d7-b6cfd5d628ba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": "{{baseURL}}/user/string"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"_postman_id": "246e99b2-8932-42f6-beab-89c16743aeb6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{baseURL}}/user/string"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"_postman_id": "a418c158-8af4-4803-8d9c-f4b537e93877",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/user/login?username=string&password=1234",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"_postman_id": "51b50b34-7128-43a1-b727-7ca896b611c9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{baseURL}}/user/logout"
+					},
+					"response": []
+				},
+				{
+					"name": "Create user",
+					"_postman_id": "448e6ec2-d5d3-44c8-ba9e-38bea1e60730",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": "{{baseURL}}/user"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
+		}
+	],
+	"variable": [
+		{
+			"id": "a36295b5-8ded-4c8f-9e3c-32a4cf459733",
+			"key": "baseURL",
+			"value": "https://petstore.swagger.io/v2",
+			"type": "string"
+		}
+	]
+}
