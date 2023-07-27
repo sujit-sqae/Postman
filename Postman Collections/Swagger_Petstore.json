@@ -584,7 +584,7 @@
 					"name": "Get user by user name",
 					"item": [
 						{
-							"name": "Get user by user name",
+							"name": "Successful operation",
 							"id": "10c19170-b0e1-4a65-8312-cdc63b3d5514",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -905,7 +905,7 @@
 	],
 	"variable": [
 		{
-			"id": "db1a04ce-af70-4a12-aae4-7152822db8bf",
+			"id": "e8e1d13f-59ca-4cc7-b49f-0120484b6942",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
