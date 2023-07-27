@@ -241,7 +241,7 @@
 					"name": "Updates a pet in the store with form data",
 					"item": [
 						{
-							"name": "successful operation",
+							"name": "Successful operation",
 							"id": "27ef38f9-1743-47d3-aa7c-f10c91534e91",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -636,7 +636,7 @@
 	],
 	"variable": [
 		{
-			"id": "7b3a71bd-7b40-4fbb-813c-04e2b872e187",
+			"id": "71f11834-48a2-4493-8db8-7830685313fa",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
