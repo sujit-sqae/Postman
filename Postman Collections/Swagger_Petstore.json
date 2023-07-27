@@ -156,6 +156,19 @@
 								"url": "{{baseURL}}/"
 							},
 							"response": []
+						},
+						{
+							"name": "Validation exception",
+							"id": "3e55e2a2-bb61-4c69-add6-50d294756a96",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
 						}
 					],
 					"id": "3655b519-4757-4ac0-9aba-d7cb62f1c580"
@@ -502,7 +515,7 @@
 	],
 	"variable": [
 		{
-			"id": "e9f2031f-be5e-4343-8677-3b6af6827117",
+			"id": "8c909c65-0480-48c4-984f-de11163589b2",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
