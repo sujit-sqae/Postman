@@ -626,7 +626,7 @@
 							"response": []
 						},
 						{
-							"name": "Successful operation Copy 2",
+							"name": "Successful operation sold pets",
 							"id": "08c487af-bfc8-4de6-b33c-1c43e6719173",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1413,7 +1413,7 @@
 	],
 	"variable": [
 		{
-			"id": "cc12eb54-6450-41c5-ab71-334e28d73d23",
+			"id": "370f5aa1-aacd-4503-b1c2-6a4dc922ae14",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
