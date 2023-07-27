@@ -316,21 +316,48 @@
 				},
 				{
 					"name": "Deletes a pet",
-					"item": [],
+					"item": [
+						{
+							"name": "Deletes a pet",
+							"id": "c3fff72f-5925-4e1e-9044-7fdbb0459398",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						},
+						{
+							"name": "Invalid ID supplied",
+							"id": "48dc48e8-a47e-4d0d-9e4a-54284c22854d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						},
+						{
+							"name": "Deletes a pet Copy 2",
+							"id": "2d8c05be-001e-4a27-87e3-e37f5834f9ef",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						}
+					],
 					"id": "e843495c-200d-4362-90a7-0be118a09415"
-				},
-				{
-					"name": "Deletes a pet",
-					"id": "c3fff72f-5925-4e1e-9044-7fdbb0459398",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
 				}
 			],
 			"id": "d177ff21-40da-479a-a963-93a0785add8d"
@@ -609,7 +636,7 @@
 	],
 	"variable": [
 		{
-			"id": "8f409f11-a326-4677-97a8-6a39e1007efc",
+			"id": "7afe5ee7-a77a-4c39-ac94-79a120a5ce69",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
