@@ -13,6 +13,45 @@
 					"item": [
 						{
 							"name": "Successful operation",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ba184ffc-891a-457d-9642-e102e3c91ddd",
+										"exec": [
+											"",
+											"pm.test(\"Successful operation\", function () {",
+											"    pm.expect(pm.response.code).to.equal(200);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Validate id field is a non-negative integer\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.id).to.be.a('number');",
+											"    pm.expect(responseData.id).to.be.at.least(0);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Validate the name field is a non-empty string\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.name).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Name should not be empty\");",
+											"});",
+											"",
+											"",
+											"pm.test(\"Validate the photoUrls array is present and contains at least one element\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.photoUrls).to.exist.and.to.be.an('array').that.has.lengthOf.at.least(1);",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "cae394a0-06d4-477a-9c14-af2092eac575",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -992,7 +1031,7 @@
 	],
 	"variable": [
 		{
-			"id": "3028f693-2262-4e9e-89e6-b08bbe4ba4a6",
+			"id": "fa1d6ead-98dd-4734-a4cf-75d205cee80e",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
