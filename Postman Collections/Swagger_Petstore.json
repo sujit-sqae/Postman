@@ -74,7 +74,7 @@
 					"name": "uploadImage",
 					"item": [
 						{
-							"name": "successful",
+							"name": "Valid input",
 							"id": "46eef211-3614-4ecc-8005-d24068799e9c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -470,7 +470,7 @@
 	],
 	"variable": [
 		{
-			"id": "edf0fde2-b95d-47da-addc-d232bddbb2b9",
+			"id": "bb8ea2f7-aad2-4784-82e7-b1e294c00db5",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
