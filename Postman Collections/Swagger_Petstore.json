@@ -315,7 +315,7 @@
 					"id": "8c06eaba-5d5e-4cf2-99fd-16a39ec7ca8d"
 				},
 				{
-					"name": "New Folder",
+					"name": "Deletes a pet",
 					"item": [],
 					"id": "e843495c-200d-4362-90a7-0be118a09415"
 				},
@@ -609,7 +609,7 @@
 	],
 	"variable": [
 		{
-			"id": "9d077b34-9262-447d-bdc0-f03266dec533",
+			"id": "8f409f11-a326-4677-97a8-6a39e1007efc",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
