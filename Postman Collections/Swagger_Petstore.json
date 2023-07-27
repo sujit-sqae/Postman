@@ -376,7 +376,7 @@
 					"id": "3f4dfae1-88a0-4daa-a838-74514fc73ea2"
 				},
 				{
-					"name": "New Folder",
+					"name": "Delete purchase order by ID",
 					"item": [],
 					"id": "3ff6b7e5-12ee-4c35-9f19-f3e9965f29df"
 				},
@@ -651,7 +651,7 @@
 	],
 	"variable": [
 		{
-			"id": "702aceb1-4fd2-47b0-a0df-224d1a04182b",
+			"id": "182aa761-eaf5-4558-ae90-3910e221db49",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
