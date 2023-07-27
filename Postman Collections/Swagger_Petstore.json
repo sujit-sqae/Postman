@@ -550,7 +550,7 @@
 					"name": "Creates list of users with given input array",
 					"item": [
 						{
-							"name": "createWithList",
+							"name": "Successful operation",
 							"id": "9c8151ae-c1f2-4beb-93fc-92b8242a7691",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -905,7 +905,7 @@
 	],
 	"variable": [
 		{
-			"id": "e8e1d13f-59ca-4cc7-b49f-0120484b6942",
+			"id": "e75e86a5-1e69-47ec-9b98-f0fca5005b7d",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
