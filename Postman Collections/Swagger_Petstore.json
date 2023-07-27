@@ -366,7 +366,7 @@
 			"name": "store",
 			"item": [
 				{
-					"name": "New Folder",
+					"name": "Place an order for a pet",
 					"item": [],
 					"id": "206622a1-52c7-4469-ae35-887a44add5c6"
 				},
@@ -641,7 +641,7 @@
 	],
 	"variable": [
 		{
-			"id": "2d8a7d6e-ae96-4ef1-b603-a2bbe84dd1cf",
+			"id": "2af116e7-32c6-4bf1-8902-2eca7cd2e443",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
