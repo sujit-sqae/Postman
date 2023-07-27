@@ -518,7 +518,7 @@
 					"id": "413ddcdc-eac5-4f30-9aea-26857b248dc7"
 				},
 				{
-					"name": "New Folder",
+					"name": "Creates list of users with given input array",
 					"item": [],
 					"id": "7dd5dca2-d657-42a4-9756-2961ed78d6d0"
 				},
@@ -760,7 +760,7 @@
 	],
 	"variable": [
 		{
-			"id": "9900fcd5-a7c8-4dff-8e8a-7bfa9c20296b",
+			"id": "a17dcaa8-804d-40dc-9cbe-aa6b916e01b1",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
