@@ -159,7 +159,7 @@
 					"id": "8fae869f-5a1d-4b07-a290-78058beed640"
 				},
 				{
-					"name": "uploadImage",
+					"name": "Uploads an image",
 					"item": [
 						{
 							"name": "Successful operation",
@@ -1031,7 +1031,7 @@
 	],
 	"variable": [
 		{
-			"id": "fa1d6ead-98dd-4734-a4cf-75d205cee80e",
+			"id": "c5177c3a-2cd5-45b7-ba7d-3deecd33065f",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
