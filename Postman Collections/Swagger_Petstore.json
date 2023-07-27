@@ -665,7 +665,7 @@
 							"response": []
 						},
 						{
-							"name": "Updated User Copy 2",
+							"name": "User not found",
 							"id": "959d7895-fec2-4f2d-9b6d-60d83cb4a1d5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -905,7 +905,7 @@
 	],
 	"variable": [
 		{
-			"id": "ec46b260-1b82-412f-aa3e-98df511cc019",
+			"id": "b4a33998-5050-41b6-bcdb-4a6e78c3b747",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
