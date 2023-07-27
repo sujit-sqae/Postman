@@ -334,14 +334,68 @@
 						},
 						{
 							"name": "Invalid ID supplied",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "32d3b9b4-c4d7-4cf1-a5bd-36c946bc6d1c",
+										"exec": [
+											"",
+											"pm.test(\"Invalid ID supplied\", function () {",
+											"    pm.expect(pm.response.code).to.equal(400);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Validate response code and message fields\", function () {",
+											"    pm.expect(pm.response.code).to.equal(400);",
+											"    pm.expect(pm.response.json().message).to.exist;",
+											"});",
+											"",
+											"",
+											"pm.test(\"Type should be a non-empty string\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData).to.be.an('object');",
+											"    pm.expect(responseData.type).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+											"});",
+											"",
+											"",
+											"pm.test(\"Message is a non-empty string\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData).to.be.an('object');",
+											"    pm.expect(responseData.message).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "c61f7370-b434-4ebb-b145-0a0eee8e87bf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/"
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": q,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+								},
+								"url": "{{baseURL}}/pet"
 							},
 							"response": []
 						},
@@ -1144,7 +1198,7 @@
 	],
 	"variable": [
 		{
-			"id": "5db22197-a9f4-4365-a4fb-2fcf5e1a7006",
+			"id": "008bb941-ad64-4313-ae52-67fc7635995a",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
