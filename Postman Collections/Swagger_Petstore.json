@@ -538,7 +538,7 @@
 					"id": "8a6910fa-21f0-4864-b087-ed8deba1e414"
 				},
 				{
-					"name": "New Folder",
+					"name": "Logs user into the system",
 					"item": [],
 					"id": "0abdefa4-02c7-4064-9a65-a129ce0296df"
 				},
@@ -760,7 +760,7 @@
 	],
 	"variable": [
 		{
-			"id": "1b084916-7292-4994-a96f-8514286dadc2",
+			"id": "f3e29920-febc-452f-ab0f-dfcf7b4add0c",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
