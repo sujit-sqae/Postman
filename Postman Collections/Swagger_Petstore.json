@@ -19,13 +19,28 @@
 							},
 							"request": {
 								"method": "POST",
-								"header": [],
-								"url": "{{baseURL}}/"
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\n\n"
+								},
+								"url": "{{baseURL}}/pet"
 							},
 							"response": []
 						},
 						{
-							"name": "Add a new pet to the store Copy",
+							"name": "unsuccessful",
 							"id": "ec8e7c0c-8207-434a-9619-2190ec25b2f7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -434,7 +449,7 @@
 	],
 	"variable": [
 		{
-			"id": "334e99ea-e6ec-431d-93d2-e3ea893de131",
+			"id": "872e51bf-0a6b-4b48-9a35-bbe77551aa0f",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
