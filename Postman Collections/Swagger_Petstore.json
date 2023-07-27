@@ -518,6 +518,11 @@
 					"id": "413ddcdc-eac5-4f30-9aea-26857b248dc7"
 				},
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "7dd5dca2-d657-42a4-9756-2961ed78d6d0"
+				},
+				{
 					"name": "createWithArray",
 					"id": "657cef06-839e-4aea-9f09-b033f9c836fb",
 					"protocolProfileBehavior": {
@@ -730,7 +735,7 @@
 	],
 	"variable": [
 		{
-			"id": "41e2e5db-d341-40d9-a8cb-e3bcd8d4a05f",
+			"id": "fa9e787d-e294-4b0e-a14f-15f93904b6d8",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
