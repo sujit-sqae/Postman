@@ -583,14 +583,14 @@
 			"id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
 		},
 		{
-			"name": "New Folder",
+			"name": "Updates a pet in the store with form data",
 			"item": [],
 			"id": "e9ea6edc-0f8b-4700-929a-1bd9d363cb3b"
 		}
 	],
 	"variable": [
 		{
-			"id": "9dd240b5-1c81-41af-a400-70e4ad30e103",
+			"id": "c1ec48a8-267e-40d9-9765-3364b614be80",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
