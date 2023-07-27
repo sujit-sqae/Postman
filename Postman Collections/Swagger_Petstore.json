@@ -681,7 +681,7 @@
 							"response": []
 						},
 						{
-							"name": "Delete User Copy 2",
+							"name": "User not found",
 							"id": "2a8b7dcc-9ade-41d2-a4c2-d852eefc11b9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -849,7 +849,7 @@
 	],
 	"variable": [
 		{
-			"id": "d72ca7c1-f614-49aa-b843-f70218383fa1",
+			"id": "e2f07b6f-c45e-4766-aa03-c2227408e74e",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
