@@ -414,7 +414,7 @@
 							"response": []
 						},
 						{
-							"name": "Successful operation Copy 2",
+							"name": "Order not found",
 							"id": "1092ffc1-be16-4e14-8241-32f9a9b8020b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -712,7 +712,7 @@
 	],
 	"variable": [
 		{
-			"id": "327500f5-64df-4425-b371-022a76e6263b",
+			"id": "fe158bcc-d36e-463c-b052-0dbed06a561f",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
