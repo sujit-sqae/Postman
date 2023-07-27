@@ -238,19 +238,6 @@
 					"id": "e7f905cf-497b-425e-bf66-a0a8fc78dc72"
 				},
 				{
-					"name": "Find pet by ID",
-					"id": "c1f74fb2-7b1e-47e9-bdb9-0d30849a3cab",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
-				},
-				{
 					"name": "Updates a pet in the store with form data",
 					"id": "27ef38f9-1743-47d3-aa7c-f10c91534e91",
 					"protocolProfileBehavior": {
@@ -278,6 +265,25 @@
 				}
 			],
 			"id": "d177ff21-40da-479a-a963-93a0785add8d"
+		},
+		{
+			"name": "Find pet by ID",
+			"item": [
+				{
+					"name": "successful operation",
+					"id": "c1f74fb2-7b1e-47e9-bdb9-0d30849a3cab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				}
+			],
+			"id": "8c06eaba-5d5e-4cf2-99fd-16a39ec7ca8d"
 		},
 		{
 			"name": "store",
@@ -549,16 +555,11 @@
 				}
 			],
 			"id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
-		},
-		{
-			"name": "Find pet by ID",
-			"item": [],
-			"id": "8c06eaba-5d5e-4cf2-99fd-16a39ec7ca8d"
 		}
 	],
 	"variable": [
 		{
-			"id": "47f6817c-e58a-47d0-bf35-f9c270850c75",
+			"id": "5d5fb058-be31-408f-a230-5b599016a0b9",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
