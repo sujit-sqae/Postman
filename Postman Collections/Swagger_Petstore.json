@@ -388,7 +388,7 @@
 					"name": "Find purchase order by ID",
 					"item": [
 						{
-							"name": "Find purchase order by ID",
+							"name": "Successful operation",
 							"id": "ae730b81-1ab2-4ed2-8da0-f2308debe350",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -660,7 +660,7 @@
 	],
 	"variable": [
 		{
-			"id": "b4a5232a-8d1c-43aa-a860-6cdf500fc1c1",
+			"id": "7a26c416-8997-4c3a-8c92-b8ff946f9d55",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
