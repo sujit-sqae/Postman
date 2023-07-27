@@ -401,14 +401,75 @@
 						},
 						{
 							"name": "Pet not found",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "52912f16-40bd-476a-bc49-543b4a798614",
+										"exec": [
+											"",
+											"pm.test(\"Pet not found\", function () {",
+											"    pm.response.to.have.status(404);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Validate the 'code' field in the response\", function () {",
+											"    pm.expect(pm.response.json().code).to.exist;",
+											"});",
+											"",
+											"",
+											"pm.test(\"Validate the 'type' field in the response\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.type).to.exist.and.to.be.a('string');",
+											"});",
+											"",
+											"",
+											"pm.test(\"Validate the 'message' field in the response\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.message).to.exist.and.to.be.a('string');",
+											"});",
+											"",
+											"",
+											"pm.test(\"Response time is in an acceptable range\", function () {",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "a9781c3c-59b8-4901-9028-ac89bce9e70e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/"
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseURL}}/pet1"
 							},
 							"response": []
 						},
@@ -1263,7 +1324,7 @@
 	],
 	"variable": [
 		{
-			"id": "da4aaccd-fab9-4587-9b97-11b21bf179f6",
+			"id": "2976f5ce-7e43-4599-9441-fefe4b5827ff",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
