@@ -318,7 +318,7 @@
 					"name": "Deletes a pet",
 					"item": [
 						{
-							"name": "Deletes a pet",
+							"name": "Successful operation",
 							"id": "c3fff72f-5925-4e1e-9044-7fdbb0459398",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -636,7 +636,7 @@
 	],
 	"variable": [
 		{
-			"id": "361e6fd6-e2c0-429f-bb32-06bc232571b8",
+			"id": "88ac4bf4-bcbc-45b1-9e84-2d4c540c3e35",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
