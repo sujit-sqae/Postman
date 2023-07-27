@@ -740,6 +740,54 @@
 						},
 						{
 							"name": "Successful operation sold pets",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "bf3591bd-bd6b-4ffe-82cd-c2e3eddea109",
+										"exec": [
+											"",
+											"pm.test(\"Successful operation for sold pets\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Verify that the 'id' field is a non-negative integer\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData).to.be.an('array');",
+											"",
+											"    responseData.forEach(function (pet) {",
+											"        pm.expect(pet.id).to.be.a('number').and.to.satisfy(function (id) {",
+											"            return id >= 0;",
+											"        });",
+											"    });",
+											"});",
+											"",
+											"",
+											"pm.test(\"Verify that the 'name' field is a non-empty string\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData).to.be.an('array');",
+											"    responseData.forEach(function (pet) {",
+											"        pm.expect(pet.name).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+											"    });",
+											"});",
+											"",
+											"",
+											"pm.test(\"Verify that the 'photoUrls' field is an array and contains at least one element\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData).to.be.an('array');",
+											"    pm.expect(responseData[0].photoUrls).to.be.an('array').and.to.have.lengthOf.at.least(1);",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "08c487af-bfc8-4de6-b33c-1c43e6719173",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1526,7 +1574,7 @@
 	],
 	"variable": [
 		{
-			"id": "51a0b4a4-0179-4009-8b9b-be2919df7a9f",
+			"id": "b6c4baa1-f410-4013-ae53-f52f251f7215",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
