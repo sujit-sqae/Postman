@@ -116,6 +116,11 @@
 					"id": "8c33047c-3973-4d9b-9162-b266b4a0c6b9"
 				},
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "3655b519-4757-4ac0-9aba-d7cb62f1c580"
+				},
+				{
 					"name": "Update an existing pet",
 					"id": "2e6af7cb-42dc-459a-8564-2e576d73bbb2",
 					"protocolProfileBehavior": {
@@ -470,7 +475,7 @@
 	],
 	"variable": [
 		{
-			"id": "cfba0ca3-cc60-4570-a8e6-e1f039f6701d",
+			"id": "454de30b-dc08-4c51-a6f1-fa5b7f26a1ca",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
