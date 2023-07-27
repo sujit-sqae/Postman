@@ -207,16 +207,22 @@
 				},
 				{
 					"name": "Finds Pets by tags",
-					"id": "2d61cb9f-9362-4fed-b827-3b3cccce35ac",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
+					"item": [
+						{
+							"name": "successful operation",
+							"id": "2d61cb9f-9362-4fed-b827-3b3cccce35ac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						}
+					],
+					"id": "e7f905cf-497b-425e-bf66-a0a8fc78dc72"
 				},
 				{
 					"name": "Find pet by ID",
@@ -530,16 +536,11 @@
 				}
 			],
 			"id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
-		},
-		{
-			"name": "Finds Pets by tags",
-			"item": [],
-			"id": "e7f905cf-497b-425e-bf66-a0a8fc78dc72"
 		}
 	],
 	"variable": [
 		{
-			"id": "a0bc832c-2cd4-432a-a61c-32c116775cf9",
+			"id": "a43d29c3-0715-482a-a8b9-18df4e763997",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
