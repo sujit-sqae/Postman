@@ -12,7 +12,7 @@
 					"name": "Add a new pet to the store",
 					"item": [
 						{
-							"name": "Valid input",
+							"name": "Successful operation",
 							"id": "cae394a0-06d4-477a-9c14-af2092eac575",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -636,7 +636,7 @@
 	],
 	"variable": [
 		{
-			"id": "24dd028e-162e-4016-9f43-3ddc83ca82d8",
+			"id": "92b069cc-249a-479e-b131-68bd35cea8ac",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
