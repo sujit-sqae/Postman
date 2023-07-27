@@ -281,6 +281,32 @@
 						"url": "{{baseURL}}/"
 					},
 					"response": []
+				},
+				{
+					"name": "Invalid ID supplied",
+					"id": "480a52ea-7b98-4356-ae31-97ff5b36a978",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
+					"name": "successful operation Copy 2",
+					"id": "1255b046-2843-4ed5-ad71-2b02396d45b8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
 				}
 			],
 			"id": "8c06eaba-5d5e-4cf2-99fd-16a39ec7ca8d"
@@ -559,7 +585,7 @@
 	],
 	"variable": [
 		{
-			"id": "5d5fb058-be31-408f-a230-5b599016a0b9",
+			"id": "0c0c4d7f-0b13-46e2-bfc6-fe622e0e9815",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
