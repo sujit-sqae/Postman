@@ -668,8 +668,46 @@
 					"name": "Logs user into the system",
 					"item": [
 						{
-							"name": "Login",
+							"name": "Successful operation",
 							"id": "a418c158-8af4-4803-8d9c-f4b537e93877",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/user/login?username=string&password=1234",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"user",
+										"login"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "string"
+										},
+										{
+											"key": "password",
+											"value": "1234"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login Copy",
+							"id": "8caf7ad4-407c-4282-970c-c8f65b3771ba",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -773,7 +811,7 @@
 	],
 	"variable": [
 		{
-			"id": "fd56b67b-6cea-43df-aaff-80792ea16384",
+			"id": "7a2d6d42-1499-4433-a2cf-b800a632539e",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
