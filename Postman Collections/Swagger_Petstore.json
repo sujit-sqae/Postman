@@ -367,75 +367,79 @@
 			"item": [
 				{
 					"name": "Place an order for a pet",
-					"item": [],
+					"item": [
+						{
+							"name": "Get user by user name",
+							"id": "9ba8cfd3-da73-4c94-ad5b-d46d4327a360",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						}
+					],
 					"id": "206622a1-52c7-4469-ae35-887a44add5c6"
 				},
 				{
 					"name": "Find purchase order by ID",
-					"item": [],
+					"item": [
+						{
+							"name": "Find purchase order by ID",
+							"id": "ae730b81-1ab2-4ed2-8da0-f2308debe350",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						}
+					],
 					"id": "3f4dfae1-88a0-4daa-a838-74514fc73ea2"
 				},
 				{
 					"name": "Delete purchase order by ID",
-					"item": [],
+					"item": [
+						{
+							"name": "Delete purchase order by ID",
+							"id": "a5dae643-0090-4e26-8b56-73a8d14aa55a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						}
+					],
 					"id": "3ff6b7e5-12ee-4c35-9f19-f3e9965f29df"
 				},
 				{
 					"name": "Returns pet inventories by status",
-					"item": [],
+					"item": [
+						{
+							"name": "Successful operation",
+							"id": "071997f3-e068-4d73-8389-721849c961d8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						}
+					],
 					"id": "5516008b-c2b9-4f27-b716-3a4db120f1eb"
-				},
-				{
-					"name": "Get user by user name",
-					"id": "9ba8cfd3-da73-4c94-ad5b-d46d4327a360",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
-				},
-				{
-					"name": "Find purchase order by ID",
-					"id": "ae730b81-1ab2-4ed2-8da0-f2308debe350",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
-				},
-				{
-					"name": "Delete purchase order by ID",
-					"id": "a5dae643-0090-4e26-8b56-73a8d14aa55a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
-				},
-				{
-					"name": "Returns pet inventories by status",
-					"id": "071997f3-e068-4d73-8389-721849c961d8",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
 				}
 			],
 			"id": "77e67129-5522-4514-aea7-6a0c7d924271"
@@ -656,7 +660,7 @@
 	],
 	"variable": [
 		{
-			"id": "acbd457f-aaa0-483f-83e7-b4f50af41e09",
+			"id": "55701203-6d0c-412b-a0a9-4ef0bb3656c9",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
