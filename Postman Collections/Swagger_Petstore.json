@@ -592,6 +592,74 @@
 							"response": []
 						},
 						{
+							"name": "Successful operation pending pets",
+							"id": "7540ea5b-961d-4a4a-b926-335f82823eb4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/pet/findByStatus?status=available",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"pet",
+										"findByStatus"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "available"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Successful operation Copy 2",
+							"id": "08c487af-bfc8-4de6-b33c-1c43e6719173",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/pet/findByStatus?status=available",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"pet",
+										"findByStatus"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "available"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Invalid status value",
 							"id": "661aa693-5679-4d2e-9995-1dd316e1bc88",
 							"protocolProfileBehavior": {
@@ -1345,7 +1413,7 @@
 	],
 	"variable": [
 		{
-			"id": "4e71330a-5128-45ca-a2dd-de5a1639589c",
+			"id": "12730858-5847-49d2-849b-81f80e0c1e0e",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
