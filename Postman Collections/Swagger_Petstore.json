@@ -532,14 +532,14 @@
 			"id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
 		},
 		{
-			"name": "New Folder",
+			"name": "Finds Pets by tags",
 			"item": [],
 			"id": "e7f905cf-497b-425e-bf66-a0a8fc78dc72"
 		}
 	],
 	"variable": [
 		{
-			"id": "680e62bc-71d8-45e1-ab7d-f5a2ebcf4f5b",
+			"id": "a0bc832c-2cd4-432a-a61c-32c116775cf9",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
