@@ -565,8 +565,29 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
-								"url": "{{baseURL}}/"
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/pet/findByStatus?status=available",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"pet",
+										"findByStatus"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "available"
+										}
+									]
+								}
 							},
 							"response": []
 						},
@@ -1324,7 +1345,7 @@
 	],
 	"variable": [
 		{
-			"id": "2976f5ce-7e43-4599-9441-fefe4b5827ff",
+			"id": "4e71330a-5128-45ca-a2dd-de5a1639589c",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
