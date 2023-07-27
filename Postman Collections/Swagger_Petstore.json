@@ -660,6 +660,44 @@
 								"url": "{{baseURL}}/user/string"
 							},
 							"response": []
+						},
+						{
+							"name": "Invalid username supplied",
+							"id": "8b9bc325-75d8-4c6f-8104-e014c6427132",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "{{baseURL}}/user/string"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User Copy 2",
+							"id": "2a8b7dcc-9ade-41d2-a4c2-d852eefc11b9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "{{baseURL}}/user/string"
+							},
+							"response": []
 						}
 					],
 					"id": "8a6910fa-21f0-4864-b087-ed8deba1e414"
@@ -811,7 +849,7 @@
 	],
 	"variable": [
 		{
-			"id": "63c6889b-7c91-4fe6-92f5-922ff40f0e14",
+			"id": "d72ca7c1-f614-49aa-b843-f70218383fa1",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
