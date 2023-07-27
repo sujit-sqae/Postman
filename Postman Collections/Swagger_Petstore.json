@@ -381,7 +381,7 @@
 					"id": "3ff6b7e5-12ee-4c35-9f19-f3e9965f29df"
 				},
 				{
-					"name": "New Folder",
+					"name": "Returns pet inventories by status",
 					"item": [],
 					"id": "5516008b-c2b9-4f27-b716-3a4db120f1eb"
 				},
@@ -656,7 +656,7 @@
 	],
 	"variable": [
 		{
-			"id": "df36fa20-d1b3-4301-b9bb-ae37fb3163d4",
+			"id": "acbd457f-aaa0-483f-83e7-b4f50af41e09",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
