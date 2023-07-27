@@ -33,7 +33,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "\n\n"
+									"raw": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}\n"
 								},
 								"url": "{{baseURL}}/pet"
 							},
@@ -464,7 +464,7 @@
 	],
 	"variable": [
 		{
-			"id": "e6778b9a-a4e1-4a0c-a9de-70397ecd438d",
+			"id": "cc38e778-a68d-4e5a-854a-1ceec0c033f2",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
