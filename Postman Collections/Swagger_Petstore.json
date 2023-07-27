@@ -10,21 +10,35 @@
 			"item": [
 				{
 					"name": "Add a new pet to the store",
-					"item": [],
+					"item": [
+						{
+							"name": "Successful",
+							"id": "cae394a0-06d4-477a-9c14-af2092eac575",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						},
+						{
+							"name": "Add a new pet to the store Copy",
+							"id": "ec8e7c0c-8207-434a-9619-2190ec25b2f7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						}
+					],
 					"id": "8fae869f-5a1d-4b07-a290-78058beed640"
-				},
-				{
-					"name": "Add a new pet to the store",
-					"id": "cae394a0-06d4-477a-9c14-af2092eac575",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
 				},
 				{
 					"name": "uploadImage",
@@ -420,7 +434,7 @@
 	],
 	"variable": [
 		{
-			"id": "ed8d2a10-e45b-46b5-a56e-39b572778caf",
+			"id": "34e5ca5f-5169-41cb-b3c9-140caab6bbc1",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
