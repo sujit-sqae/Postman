@@ -72,47 +72,48 @@
 				},
 				{
 					"name": "uploadImage",
-					"item": [],
-					"id": "8c33047c-3973-4d9b-9162-b266b4a0c6b9"
-				},
-				{
-					"name": "uploadImage",
-					"id": "46eef211-3614-4ecc-8005-d24068799e9c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
+					"item": [
+						{
+							"name": "successful",
+							"id": "46eef211-3614-4ecc-8005-d24068799e9c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
 							},
-							{
-								"key": "Content-Type",
-								"value": "multipart/form-data",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "file",
-									"type": "file",
-									"src": "/Users/sarker/Desktop/Untitled.jpg"
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/Users/sarker/Desktop/Untitled.jpg"
+										},
+										{
+											"key": "additionalMetadata",
+											"value": "ok",
+											"type": "text"
+										}
+									]
 								},
-								{
-									"key": "additionalMetadata",
-									"value": "ok",
-									"type": "text"
-								}
-							]
-						},
-						"url": "{{baseURL}}/pet/1/uploadImage"
-					},
-					"response": []
+								"url": "{{baseURL}}/pet/1/uploadImage"
+							},
+							"response": []
+						}
+					],
+					"id": "8c33047c-3973-4d9b-9162-b266b4a0c6b9"
 				},
 				{
 					"name": "Update an existing pet",
@@ -469,7 +470,7 @@
 	],
 	"variable": [
 		{
-			"id": "259efe94-0b39-4a6c-b9c6-73c972aa4d27",
+			"id": "c7016dfe-94f5-4c6a-a942-a7e22c2655de",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
