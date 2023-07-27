@@ -635,6 +635,62 @@
 								"url": "{{baseURL}}/user/string"
 							},
 							"response": []
+						},
+						{
+							"name": "Invalid user supplied",
+							"id": "db306117-7334-4fa8-9955-483f4e1bbbc3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}"
+								},
+								"url": "{{baseURL}}/user/string"
+							},
+							"response": []
+						},
+						{
+							"name": "Updated User Copy 2",
+							"id": "959d7895-fec2-4f2d-9b6d-60d83cb4a1d5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}"
+								},
+								"url": "{{baseURL}}/user/string"
+							},
+							"response": []
 						}
 					],
 					"id": "fc998de2-278c-477f-b04a-9615b75a1a44"
@@ -849,7 +905,7 @@
 	],
 	"variable": [
 		{
-			"id": "e2f07b6f-c45e-4766-aa03-c2227408e74e",
+			"id": "ec46b260-1b82-412f-aa3e-98df511cc019",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
