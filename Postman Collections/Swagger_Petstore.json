@@ -344,7 +344,7 @@
 							"response": []
 						},
 						{
-							"name": "Deletes a pet Copy 2",
+							"name": "Pet not found",
 							"id": "2d8c05be-001e-4a27-87e3-e37f5834f9ef",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -636,7 +636,7 @@
 	],
 	"variable": [
 		{
-			"id": "7afe5ee7-a77a-4c39-ac94-79a120a5ce69",
+			"id": "361e6fd6-e2c0-429f-bb32-06bc232571b8",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
