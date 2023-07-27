@@ -528,7 +528,7 @@
 					"id": "08a64c76-3ae6-47c5-8d01-e0b5b3225108"
 				},
 				{
-					"name": "New Folder",
+					"name": "Updated user",
 					"item": [],
 					"id": "fc998de2-278c-477f-b04a-9615b75a1a44"
 				},
@@ -760,7 +760,7 @@
 	],
 	"variable": [
 		{
-			"id": "5911a480-685e-4083-8b82-7b8a8a21000a",
+			"id": "282528a3-ee7f-4f78-ba22-6865dcaaf9e2",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
