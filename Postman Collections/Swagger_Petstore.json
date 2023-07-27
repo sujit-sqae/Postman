@@ -407,7 +407,7 @@
 					"name": "Delete purchase order by ID",
 					"item": [
 						{
-							"name": "Delete purchase order by ID",
+							"name": "Successful operation",
 							"id": "a5dae643-0090-4e26-8b56-73a8d14aa55a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -660,7 +660,7 @@
 	],
 	"variable": [
 		{
-			"id": "55701203-6d0c-412b-a0a9-4ef0bb3656c9",
+			"id": "b4a5232a-8d1c-43aa-a860-6cdf500fc1c1",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
