@@ -607,7 +607,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseURL}}/pet/findByStatus?status=available",
+									"raw": "{{baseURL}}/pet/findByStatus?status=pending",
 									"host": [
 										"{{baseURL}}"
 									],
@@ -618,7 +618,7 @@
 									"query": [
 										{
 											"key": "status",
-											"value": "available"
+											"value": "pending"
 										}
 									]
 								}
@@ -641,7 +641,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseURL}}/pet/findByStatus?status=available",
+									"raw": "{{baseURL}}/pet/findByStatus?status=sold",
 									"host": [
 										"{{baseURL}}"
 									],
@@ -652,7 +652,7 @@
 									"query": [
 										{
 											"key": "status",
-											"value": "available"
+											"value": "sold"
 										}
 									]
 								}
@@ -1413,7 +1413,7 @@
 	],
 	"variable": [
 		{
-			"id": "c9999f67-a5c9-432a-87bb-542cc8ec983d",
+			"id": "c4c487af-252a-4dc0-be6b-f247613a1b73",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
