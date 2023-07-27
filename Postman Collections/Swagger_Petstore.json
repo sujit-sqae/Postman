@@ -257,14 +257,78 @@
 					"item": [
 						{
 							"name": "Successful operation",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "50dc4553-c436-4a4b-8d52-eb9311e9444c",
+										"exec": [
+											"",
+											"pm.test(\"Successful operation\", function () {",
+											"    pm.expect(pm.response.code).to.equal(200);",
+											"});",
+											"",
+											"",
+											"pm.test(\"Validate the id field is a non-negative integer\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.id).to.be.a('number').and.to.be.at.least(0, \"Value should be a non-negative integer\");",
+											"});",
+											"",
+											"",
+											"pm.test(\"Validate the category object has the required fields\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.category).to.exist.and.to.be.an('object');",
+											"    pm.expect(responseData.category.id).to.exist.and.to.be.a('number');",
+											"    pm.expect(responseData.category.name).to.exist.and.to.be.a('string');",
+											"});",
+											"",
+											"",
+											"pm.test(\"The name field should be a non-empty string\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.name).to.exist.and.to.be.a('string');",
+											"    pm.expect(responseData.name).to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+											"});",
+											"",
+											"",
+											"pm.test(\"Verify photoUrls array is present and contains at least one element\", function () {",
+											"    const responseData = pm.response.json();",
+											"",
+											"    pm.expect(responseData.photoUrls).to.exist.and.to.be.an('array');",
+											"    pm.expect(responseData.photoUrls).to.have.lengthOf.at.least(1);",
+											"});",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "2e6af7cb-42dc-459a-8564-2e576d73bbb2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/"
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+								},
+								"url": "{{baseURL}}/pet"
 							},
 							"response": []
 						},
@@ -1080,7 +1144,7 @@
 	],
 	"variable": [
 		{
-			"id": "9e4c3211-10fe-4142-b580-45a8a7bfb5f4",
+			"id": "5db22197-a9f4-4365-a4fb-2fcf5e1a7006",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
