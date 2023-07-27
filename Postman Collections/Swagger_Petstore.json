@@ -175,21 +175,22 @@
 				},
 				{
 					"name": "Finds Pets by status",
-					"item": [],
+					"item": [
+						{
+							"name": "successful operation",
+							"id": "2c366db7-e496-49f6-bdef-ecb93feb9365",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						}
+					],
 					"id": "1bc7eb18-019c-4aef-8162-8c819fc65ae2"
-				},
-				{
-					"name": "successful operation",
-					"id": "2c366db7-e496-49f6-bdef-ecb93feb9365",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
 				},
 				{
 					"name": "Finds Pets by tags",
@@ -516,11 +517,16 @@
 				}
 			],
 			"id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "e7f905cf-497b-425e-bf66-a0a8fc78dc72"
 		}
 	],
 	"variable": [
 		{
-			"id": "7dc30d71-c1f1-4654-9994-1eeb00861448",
+			"id": "94e13c71-531e-4f06-8d29-3a747bf2a3d4",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
