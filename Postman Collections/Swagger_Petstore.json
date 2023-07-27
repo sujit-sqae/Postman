@@ -558,7 +558,7 @@
 					"name": "Finds Pets by status",
 					"item": [
 						{
-							"name": "Successful operation",
+							"name": "Successful operation available pets",
 							"id": "2c366db7-e496-49f6-bdef-ecb93feb9365",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1413,7 +1413,7 @@
 	],
 	"variable": [
 		{
-			"id": "12730858-5847-49d2-849b-81f80e0c1e0e",
+			"id": "cc12eb54-6450-41c5-ab71-334e28d73d23",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
