@@ -117,21 +117,35 @@
 				},
 				{
 					"name": "Update an existing pet",
-					"item": [],
+					"item": [
+						{
+							"name": "Update an existing pet",
+							"id": "2e6af7cb-42dc-459a-8564-2e576d73bbb2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						},
+						{
+							"name": "Invalid ID supplied",
+							"id": "c61f7370-b434-4ebb-b145-0a0eee8e87bf",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": "{{baseURL}}/"
+							},
+							"response": []
+						}
+					],
 					"id": "3655b519-4757-4ac0-9aba-d7cb62f1c580"
-				},
-				{
-					"name": "Update an existing pet",
-					"id": "2e6af7cb-42dc-459a-8564-2e576d73bbb2",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": "{{baseURL}}/"
-					},
-					"response": []
 				},
 				{
 					"name": "Finds Pets by status",
@@ -475,7 +489,7 @@
 	],
 	"variable": [
 		{
-			"id": "36a1bede-a968-41fc-9c86-ee8e524136ed",
+			"id": "d1409661-d7fd-4261-8ece-b1f3cffe1148",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
