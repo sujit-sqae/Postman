@@ -533,7 +533,7 @@
 					"id": "fc998de2-278c-477f-b04a-9615b75a1a44"
 				},
 				{
-					"name": "New Folder",
+					"name": "Delete user",
 					"item": [],
 					"id": "8a6910fa-21f0-4864-b087-ed8deba1e414"
 				},
@@ -760,7 +760,7 @@
 	],
 	"variable": [
 		{
-			"id": "282528a3-ee7f-4f78-ba22-6865dcaaf9e2",
+			"id": "1b084916-7292-4994-a96f-8514286dadc2",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
