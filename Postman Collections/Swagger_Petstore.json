@@ -9,6 +9,24 @@
 			"name": "pet",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "8fae869f-5a1d-4b07-a290-78058beed640"
+				},
+				{
+					"name": "Add a new pet to the store",
+					"id": "cae394a0-06d4-477a-9c14-af2092eac575",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{baseURL}}/"
+					},
+					"response": []
+				},
+				{
 					"name": "uploadImage",
 					"id": "46eef211-3614-4ecc-8005-d24068799e9c",
 					"protocolProfileBehavior": {
@@ -44,19 +62,6 @@
 							]
 						},
 						"url": "{{baseURL}}/pet/1/uploadImage"
-					},
-					"response": []
-				},
-				{
-					"name": "Add a new pet to the store",
-					"id": "cae394a0-06d4-477a-9c14-af2092eac575",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{baseURL}}/"
 					},
 					"response": []
 				},
@@ -415,7 +420,7 @@
 	],
 	"variable": [
 		{
-			"id": "7a8f5e17-5074-4372-af6a-49cdaa5f47b5",
+			"id": "6fa95ef2-05a1-4c2e-9c21-153ed61ecf7d",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
