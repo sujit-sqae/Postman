@@ -712,7 +712,7 @@
 					"name": "Logs out current logged in user session",
 					"item": [
 						{
-							"name": "Logout",
+							"name": "Successful operation",
 							"id": "51b50b34-7128-43a1-b727-7ca896b611c9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -773,7 +773,7 @@
 	],
 	"variable": [
 		{
-			"id": "03ba1758-7458-4d89-bf08-2762a0378e20",
+			"id": "fd56b67b-6cea-43df-aaff-80792ea16384",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
