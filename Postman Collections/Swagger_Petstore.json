@@ -369,7 +369,7 @@
 					"name": "Place an order for a pet",
 					"item": [
 						{
-							"name": "Get user by user name",
+							"name": "Successful operation",
 							"id": "9ba8cfd3-da73-4c94-ad5b-d46d4327a360",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -660,7 +660,7 @@
 	],
 	"variable": [
 		{
-			"id": "7a26c416-8997-4c3a-8c92-b8ff946f9d55",
+			"id": "06371cd6-78c5-4c98-b88c-0f004cf1bea2",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
