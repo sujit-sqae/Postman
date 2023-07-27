@@ -40,7 +40,7 @@
 							"response": []
 						},
 						{
-							"name": "unsuccessful",
+							"name": "Invalid input",
 							"id": "ec8e7c0c-8207-434a-9619-2190ec25b2f7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -470,7 +470,7 @@
 	],
 	"variable": [
 		{
-			"id": "22247e97-e2c2-41dc-986e-979f4922ced8",
+			"id": "edf0fde2-b95d-47da-addc-d232bddbb2b9",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
