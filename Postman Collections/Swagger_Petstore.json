@@ -699,7 +699,7 @@
 					"name": "Delete user",
 					"item": [
 						{
-							"name": "Delete User",
+							"name": "Successful operation",
 							"id": "246e99b2-8932-42f6-beab-89c16743aeb6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -905,7 +905,7 @@
 	],
 	"variable": [
 		{
-			"id": "b4a33998-5050-41b6-bcdb-4a6e78c3b747",
+			"id": "8a1a0026-6ac3-4f54-8347-9e8249631c41",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
