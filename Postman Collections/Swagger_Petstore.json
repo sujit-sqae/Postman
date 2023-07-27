@@ -10,20 +10,46 @@
 			"item": [
 				{
 					"name": "uploadImage",
-					"_postman_id": "46eef211-3614-4ecc-8005-d24068799e9c",
+					"id": "46eef211-3614-4ecc-8005-d24068799e9c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
-						"url": "{{baseURL}}/"
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/sarker/Desktop/Untitled.jpg"
+								},
+								{
+									"key": "additionalMetadata",
+									"value": "ok",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseURL}}/pet/1/uploadImage"
 					},
 					"response": []
 				},
 				{
 					"name": "Add a new pet to the store",
-					"_postman_id": "cae394a0-06d4-477a-9c14-af2092eac575",
+					"id": "cae394a0-06d4-477a-9c14-af2092eac575",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -36,7 +62,7 @@
 				},
 				{
 					"name": "Update an existing pet",
-					"_postman_id": "2e6af7cb-42dc-459a-8564-2e576d73bbb2",
+					"id": "2e6af7cb-42dc-459a-8564-2e576d73bbb2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -49,7 +75,7 @@
 				},
 				{
 					"name": "Finds Pets by status",
-					"_postman_id": "2c366db7-e496-49f6-bdef-ecb93feb9365",
+					"id": "2c366db7-e496-49f6-bdef-ecb93feb9365",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -62,7 +88,7 @@
 				},
 				{
 					"name": "Finds Pets by tags",
-					"_postman_id": "2d61cb9f-9362-4fed-b827-3b3cccce35ac",
+					"id": "2d61cb9f-9362-4fed-b827-3b3cccce35ac",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -75,7 +101,7 @@
 				},
 				{
 					"name": "Find pet by ID",
-					"_postman_id": "c1f74fb2-7b1e-47e9-bdb9-0d30849a3cab",
+					"id": "c1f74fb2-7b1e-47e9-bdb9-0d30849a3cab",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -88,7 +114,7 @@
 				},
 				{
 					"name": "Updates a pet in the store with form data",
-					"_postman_id": "27ef38f9-1743-47d3-aa7c-f10c91534e91",
+					"id": "27ef38f9-1743-47d3-aa7c-f10c91534e91",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -101,7 +127,7 @@
 				},
 				{
 					"name": "Deletes a pet",
-					"_postman_id": "c3fff72f-5925-4e1e-9044-7fdbb0459398",
+					"id": "c3fff72f-5925-4e1e-9044-7fdbb0459398",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -113,14 +139,14 @@
 					"response": []
 				}
 			],
-			"_postman_id": "d177ff21-40da-479a-a963-93a0785add8d"
+			"id": "d177ff21-40da-479a-a963-93a0785add8d"
 		},
 		{
 			"name": "store",
 			"item": [
 				{
 					"name": "Get user by user name",
-					"_postman_id": "9ba8cfd3-da73-4c94-ad5b-d46d4327a360",
+					"id": "9ba8cfd3-da73-4c94-ad5b-d46d4327a360",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -133,7 +159,7 @@
 				},
 				{
 					"name": "Find purchase order by ID",
-					"_postman_id": "ae730b81-1ab2-4ed2-8da0-f2308debe350",
+					"id": "ae730b81-1ab2-4ed2-8da0-f2308debe350",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -146,7 +172,7 @@
 				},
 				{
 					"name": "Delete purchase order by ID",
-					"_postman_id": "a5dae643-0090-4e26-8b56-73a8d14aa55a",
+					"id": "a5dae643-0090-4e26-8b56-73a8d14aa55a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -159,7 +185,7 @@
 				},
 				{
 					"name": "Returns pet inventories by status",
-					"_postman_id": "071997f3-e068-4d73-8389-721849c961d8",
+					"id": "071997f3-e068-4d73-8389-721849c961d8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -171,14 +197,14 @@
 					"response": []
 				}
 			],
-			"_postman_id": "77e67129-5522-4514-aea7-6a0c7d924271"
+			"id": "77e67129-5522-4514-aea7-6a0c7d924271"
 		},
 		{
 			"name": "user",
 			"item": [
 				{
 					"name": "createWithArray",
-					"_postman_id": "657cef06-839e-4aea-9f09-b033f9c836fb",
+					"id": "657cef06-839e-4aea-9f09-b033f9c836fb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -198,10 +224,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]",
-							"options": {
-								"raw": {}
-							}
+							"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]"
 						},
 						"url": "{{baseURL}}/user/createWithArray"
 					},
@@ -209,7 +232,7 @@
 				},
 				{
 					"name": "createWithList",
-					"_postman_id": "9c8151ae-c1f2-4beb-93fc-92b8242a7691",
+					"id": "9c8151ae-c1f2-4beb-93fc-92b8242a7691",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -229,10 +252,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]",
-							"options": {
-								"raw": {}
-							}
+							"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]"
 						},
 						"url": "{{baseURL}}/user/createWithList"
 					},
@@ -240,7 +260,7 @@
 				},
 				{
 					"name": "Get user by user name",
-					"_postman_id": "10c19170-b0e1-4a65-8312-cdc63b3d5514",
+					"id": "10c19170-b0e1-4a65-8312-cdc63b3d5514",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -259,7 +279,7 @@
 				},
 				{
 					"name": "Updated User",
-					"_postman_id": "6aaeca98-e3d0-486b-83d7-b6cfd5d628ba",
+					"id": "6aaeca98-e3d0-486b-83d7-b6cfd5d628ba",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -279,10 +299,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}"
 						},
 						"url": "{{baseURL}}/user/string"
 					},
@@ -290,7 +307,7 @@
 				},
 				{
 					"name": "Delete User",
-					"_postman_id": "246e99b2-8932-42f6-beab-89c16743aeb6",
+					"id": "246e99b2-8932-42f6-beab-89c16743aeb6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -309,7 +326,7 @@
 				},
 				{
 					"name": "Login",
-					"_postman_id": "a418c158-8af4-4803-8d9c-f4b537e93877",
+					"id": "a418c158-8af4-4803-8d9c-f4b537e93877",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -347,7 +364,7 @@
 				},
 				{
 					"name": "Logout",
-					"_postman_id": "51b50b34-7128-43a1-b727-7ca896b611c9",
+					"id": "51b50b34-7128-43a1-b727-7ca896b611c9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -366,7 +383,7 @@
 				},
 				{
 					"name": "Create user",
-					"_postman_id": "448e6ec2-d5d3-44c8-ba9e-38bea1e60730",
+					"id": "448e6ec2-d5d3-44c8-ba9e-38bea1e60730",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -386,25 +403,21 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}"
 						},
 						"url": "{{baseURL}}/user"
 					},
 					"response": []
 				}
 			],
-			"_postman_id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
+			"id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
 		}
 	],
 	"variable": [
 		{
-			"id": "a36295b5-8ded-4c8f-9e3c-32a4cf459733",
+			"id": "7a8f5e17-5074-4372-af6a-49cdaa5f47b5",
 			"key": "baseURL",
-			"value": "https://petstore.swagger.io/v2",
-			"type": "string"
+			"value": "https://petstore.swagger.io/v2"
 		}
 	]
 }
