@@ -609,7 +609,7 @@
 					"name": "Updated user",
 					"item": [
 						{
-							"name": "Updated User",
+							"name": "Successful operation",
 							"id": "6aaeca98-e3d0-486b-83d7-b6cfd5d628ba",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -905,7 +905,7 @@
 	],
 	"variable": [
 		{
-			"id": "8a1a0026-6ac3-4f54-8347-9e8249631c41",
+			"id": "db1a04ce-af70-4a12-aae4-7152822db8bf",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
