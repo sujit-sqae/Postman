@@ -209,7 +209,7 @@
 					"name": "Finds Pets by tags",
 					"item": [
 						{
-							"name": "successful operation",
+							"name": "Successful operation",
 							"id": "2d61cb9f-9362-4fed-b827-3b3cccce35ac",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -636,7 +636,7 @@
 	],
 	"variable": [
 		{
-			"id": "71f11834-48a2-4493-8db8-7830685313fa",
+			"id": "3b15e432-3686-42aa-916c-9763a389375c",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
