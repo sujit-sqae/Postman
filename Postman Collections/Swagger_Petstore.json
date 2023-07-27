@@ -19,23 +19,8 @@
 							},
 							"request": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json",
-										"type": "text"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\n\n"
-								},
-								"url": "{{baseURL}}/pet"
+								"header": [],
+								"url": "{{baseURL}}/"
 							},
 							"response": []
 						},
@@ -449,7 +434,7 @@
 	],
 	"variable": [
 		{
-			"id": "6ae79ee5-b821-40b0-8174-78276e6b6871",
+			"id": "334e99ea-e6ec-431d-93d2-e3ea893de131",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
