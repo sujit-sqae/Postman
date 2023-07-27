@@ -514,250 +514,258 @@
 			"item": [
 				{
 					"name": "Creates list of users with given input array",
-					"item": [],
+					"item": [
+						{
+							"name": "createWithArray",
+							"id": "657cef06-839e-4aea-9f09-b033f9c836fb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]"
+								},
+								"url": "{{baseURL}}/user/createWithArray"
+							},
+							"response": []
+						}
+					],
 					"id": "413ddcdc-eac5-4f30-9aea-26857b248dc7"
 				},
 				{
 					"name": "Creates list of users with given input array",
-					"item": [],
+					"item": [
+						{
+							"name": "createWithList",
+							"id": "9c8151ae-c1f2-4beb-93fc-92b8242a7691",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]"
+								},
+								"url": "{{baseURL}}/user/createWithList"
+							},
+							"response": []
+						}
+					],
 					"id": "7dd5dca2-d657-42a4-9756-2961ed78d6d0"
 				},
 				{
 					"name": "Get user by user name",
-					"item": [],
+					"item": [
+						{
+							"name": "Get user by user name",
+							"id": "10c19170-b0e1-4a65-8312-cdc63b3d5514",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "{{baseURL}}/user/string"
+							},
+							"response": []
+						}
+					],
 					"id": "08a64c76-3ae6-47c5-8d01-e0b5b3225108"
 				},
 				{
 					"name": "Updated user",
-					"item": [],
+					"item": [
+						{
+							"name": "Updated User",
+							"id": "6aaeca98-e3d0-486b-83d7-b6cfd5d628ba",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}"
+								},
+								"url": "{{baseURL}}/user/string"
+							},
+							"response": []
+						}
+					],
 					"id": "fc998de2-278c-477f-b04a-9615b75a1a44"
 				},
 				{
 					"name": "Delete user",
-					"item": [],
+					"item": [
+						{
+							"name": "Delete User",
+							"id": "246e99b2-8932-42f6-beab-89c16743aeb6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "{{baseURL}}/user/string"
+							},
+							"response": []
+						}
+					],
 					"id": "8a6910fa-21f0-4864-b087-ed8deba1e414"
 				},
 				{
 					"name": "Logs user into the system",
-					"item": [],
+					"item": [
+						{
+							"name": "Login",
+							"id": "a418c158-8af4-4803-8d9c-f4b537e93877",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/user/login?username=string&password=1234",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"user",
+										"login"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "string"
+										},
+										{
+											"key": "password",
+											"value": "1234"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "0abdefa4-02c7-4064-9a65-a129ce0296df"
 				},
 				{
 					"name": "Logs out current logged in user session",
-					"item": [],
+					"item": [
+						{
+							"name": "Logout",
+							"id": "51b50b34-7128-43a1-b727-7ca896b611c9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "{{baseURL}}/user/logout"
+							},
+							"response": []
+						}
+					],
 					"id": "7eed0443-947d-4d81-9a10-f87c3cc9de1d"
 				},
 				{
 					"name": "Create user",
-					"item": [],
-					"id": "58d9dc93-c732-4ef6-a633-4b069000a41e"
-				},
-				{
-					"name": "createWithArray",
-					"id": "657cef06-839e-4aea-9f09-b033f9c836fb",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
+					"item": [
+						{
+							"name": "Successful operation",
+							"id": "448e6ec2-d5d3-44c8-ba9e-38bea1e60730",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
 							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]"
-						},
-						"url": "{{baseURL}}/user/createWithArray"
-					},
-					"response": []
-				},
-				{
-					"name": "createWithList",
-					"id": "9c8151ae-c1f2-4beb-93fc-92b8242a7691",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"string\",\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n]"
-						},
-						"url": "{{baseURL}}/user/createWithList"
-					},
-					"response": []
-				},
-				{
-					"name": "Get user by user name",
-					"id": "10c19170-b0e1-4a65-8312-cdc63b3d5514",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": "{{baseURL}}/user/string"
-					},
-					"response": []
-				},
-				{
-					"name": "Updated User",
-					"id": "6aaeca98-e3d0-486b-83d7-b6cfd5d628ba",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}"
-						},
-						"url": "{{baseURL}}/user/string"
-					},
-					"response": []
-				},
-				{
-					"name": "Delete User",
-					"id": "246e99b2-8932-42f6-beab-89c16743aeb6",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": "{{baseURL}}/user/string"
-					},
-					"response": []
-				},
-				{
-					"name": "Login",
-					"id": "a418c158-8af4-4803-8d9c-f4b537e93877",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "{{baseURL}}/user/login?username=string&password=1234",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"user",
-								"login"
-							],
-							"query": [
-								{
-									"key": "username",
-									"value": "string"
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}"
 								},
-								{
-									"key": "password",
-									"value": "1234"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Logout",
-					"id": "51b50b34-7128-43a1-b727-7ca896b611c9",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": "{{baseURL}}/user/logout"
-					},
-					"response": []
-				},
-				{
-					"name": "Create user",
-					"id": "448e6ec2-d5d3-44c8-ba9e-38bea1e60730",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
+								"url": "{{baseURL}}/user"
 							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"id\": 0,\n  \"username\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}"
-						},
-						"url": "{{baseURL}}/user"
-					},
-					"response": []
+							"response": []
+						}
+					],
+					"id": "58d9dc93-c732-4ef6-a633-4b069000a41e"
 				}
 			],
 			"id": "f267d8ca-57ed-4293-aace-25d811e9e5b2"
@@ -765,7 +773,7 @@
 	],
 	"variable": [
 		{
-			"id": "d15af69f-520b-4936-9451-fd99fb5c9356",
+			"id": "03ba1758-7458-4d89-bf08-2762a0378e20",
 			"key": "baseURL",
 			"value": "https://petstore.swagger.io/v2"
 		}
